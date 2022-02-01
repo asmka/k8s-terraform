@@ -1,0 +1,4 @@
+session-manager-plugin.deb
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
