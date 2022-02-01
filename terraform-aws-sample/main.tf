@@ -21,7 +21,7 @@ resource "aws_key_pair" "client" {
 
 resource "aws_instance" "k8s-master1" {
   ami                  = "ami-088da9557aae42f39"
-  instance_type        = "t2.micro"
+  instance_type        = "t2.medium"
   iam_instance_profile = "SessionManagerInstanceProfile"
   key_name             = "client-key"
   tags = {
@@ -31,7 +31,7 @@ resource "aws_instance" "k8s-master1" {
 
 resource "aws_instance" "k8s-worker1" {
   ami                  = "ami-088da9557aae42f39"
-  instance_type        = "t2.micro"
+  instance_type        = "t2.medium"
   iam_instance_profile = "SessionManagerInstanceProfile"
   key_name             = "client-key"
   tags = {
@@ -41,7 +41,7 @@ resource "aws_instance" "k8s-worker1" {
 
 resource "aws_instance" "k8s-worker2" {
   ami                  = "ami-088da9557aae42f39"
-  instance_type        = "t2.micro"
+  instance_type        = "t2.medium"
   iam_instance_profile = "SessionManagerInstanceProfile"
   key_name             = "client-key"
   tags = {
